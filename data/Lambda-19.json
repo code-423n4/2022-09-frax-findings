@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Lambda",
+  "address": "0xefc711b22f4fdbcbc221ac7c116e90c699d0b708",
+  "risk": "2",
+  "title": "ERC20PermitPermissionedMint: Minter may not be deletable",
+  "issueId": 19,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/19"
+}
