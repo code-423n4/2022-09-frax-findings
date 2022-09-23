@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "fatherOfBlocks",
+  "address": "0xd5a2686b02a15b5269848dee6e913f07f459782e",
+  "risk": "2",
+  "title": "lack of constructor validations on timelock_address variable",
+  "issueId": 22,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/22"
+}
