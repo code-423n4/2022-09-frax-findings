@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "2",
+  "title": "Malicious owner or attacker can drain all contract funds",
+  "issueId": 41,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/41"
+}
