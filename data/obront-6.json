@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "obront",
+  "address": "0xf346100e892553dceb41a927fb668da7b0b7c964",
+  "risk": "2",
+  "title": "sfrxETH contract doesn't allow depositing or minting with signature",
+  "issueId": 6,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/6"
+}
