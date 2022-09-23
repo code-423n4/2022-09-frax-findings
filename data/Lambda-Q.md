@@ -1,0 +1,1 @@
+- `xERC4626` casts timestamps to a `uint32`. Because of that, frxETH will only work until February 2106.
