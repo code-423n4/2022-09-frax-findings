@@ -1,0 +1,1 @@
+- In `ERC20PermitPermissionedMint.sol:84` and `src/frxETHMinter.sol:129`, the loop iteration can be marked as `unchecked` because an overflow is not possible (as the iterator is bounded) and `i++` can be replaced with `++i`.
