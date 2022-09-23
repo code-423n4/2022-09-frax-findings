@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "3",
+  "title": "frxETHMinter can mint new frxETH without needed eth supply by mistake or by malicious admin",
+  "issueId": 44,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/44"
+}
