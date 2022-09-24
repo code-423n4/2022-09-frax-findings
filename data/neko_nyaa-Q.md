@@ -54,3 +54,7 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermis
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L65
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L76
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L94
+
+### [N-05] It is recommended to use `safeTransfer` instead of `transfer` for ERC20
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L200
