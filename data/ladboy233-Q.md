@@ -63,4 +63,18 @@ https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f
             }
         }
 ```
+
+## Hardcoded 32 ETH staking balance
+
+https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/frxETHMinter.sol#L38
+
+the 32 ETH staking balance is hardcoded
+
+```
+   uint256 public constant DEPOSIT_SIZE = 32 ether; // ETH 2.0 minimum deposit size
+```
+
+If in the future, the minmum stkaing balance is changed in the etherenum network, the contract would not be functioning well.
+
+We recommand the project make the DEPOSIT_SIZE configurable. 
             
