@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "magu",
+  "address": "0x79611eed03b52b7a1b89b28a6ff7c40af3e58b0c",
+  "risk": "2",
+  "title": "IERC20.TRANSFER DOES NOT SUPPORT ALL ERC20 TOKEN",
+  "issueId": 74,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/74"
+}
