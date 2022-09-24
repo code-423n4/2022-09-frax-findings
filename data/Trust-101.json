@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Trust",
+  "address": "0x2fca32d86d133394f6548028a31b95adf3cc5efc",
+  "risk": "2",
+  "title": "Attacker can disrupt matching of validators and harm the APY of sfrxETH.",
+  "issueId": 101,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/101"
+}
