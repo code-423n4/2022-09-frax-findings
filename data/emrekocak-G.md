@@ -14,7 +14,7 @@ In the first case, the compiler has to create a temporary variable (when used) f
 
 Instance include:
 
-`src/ERC20/ERC20PermitPermissionedMint.sol:84:        for (uint i = 0; i < minters_array.length; i++){ `
+[`src/ERC20/ERC20PermitPermissionedMint.sol:84:`](https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84)
 I suggest using ++i instead of i++ to increment the value of a uint variable.
 
 ___
@@ -24,7 +24,13 @@ Caching the array length in the stack saves around 3 gas per iteration.
 
 Instances include:
 
-```
-src/ERC20/ERC20PermitPermissionedMint.sol:84:        for (uint i = 0; i < minters_array.length; i++){
-src/OperatorRegistry.sol:114:            for (uint256 i = 0; i < original_validators.length; ++i) {
-```
+[`src/ERC20/ERC20PermitPermissionedMint.sol:84:`](https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84)
+[`src/OperatorRegistry.sol:114:`](https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L114)
+___
+## In `require()`, Use `!= 0` Instead of `> 0` With Uint Values
+
+In a require, when checking a uint, using `!= 0` instead of `> 0` saves 6 gas. This will jump over or avoid an extra `ISZERO` opcode.
+
+Instances include:
+[`src/frxETHMinter.sol:79`](https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L79)
+[`src/frxETHMinter.sol:126`](https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L126)
