@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Trust",
+  "address": "0x2fca32d86d133394f6548028a31b95adf3cc5efc",
+  "risk": "2",
+  "title": "sfrxETH's mintWithSignature() likely to revert if approveMax not set",
+  "issueId": 100,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/100"
+}
