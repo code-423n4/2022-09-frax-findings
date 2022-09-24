@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "pedroais",
+  "address": "0x7b13eb3f49525dcf09c01dbbbd34af8a4c8c83b5",
+  "risk": "2",
+  "title": "RecoverERC20 function won't work with USDT",
+  "issueId": 128,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/128"
+}
