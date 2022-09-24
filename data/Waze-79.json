@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Waze",
+  "address": "0xb649642dee8e9e25b21cfc67da7dcf86828dd60d",
+  "risk": "3",
+  "title": "Use safetransfer/safetransferFrom instead of transfer/transferFrom in ERC20",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/79"
+}
