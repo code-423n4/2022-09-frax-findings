@@ -46,3 +46,9 @@ Two applicable instances
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L46
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L78
 
+### [G-04] Comparing `!= 0` instead of `> 0` for `uint` type is more gas-efficient
+
+Two applicable instances
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L79
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L126
