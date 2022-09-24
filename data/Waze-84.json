@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Waze",
+  "address": "0xb649642dee8e9e25b21cfc67da7dcf86828dd60d",
+  "risk": "2",
+  "title": "syncRewards() can be error due to mistake value in rewardsCycleLength",
+  "issueId": 84,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/84"
+}
