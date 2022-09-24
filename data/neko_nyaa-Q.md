@@ -1,3 +1,7 @@
+### [L-01] There is no way to submit ETH for without minting frxETH 
+
+`frxETHMinter.receive()` is equivalent to `submit()`, thereby there is no way for (e.g.) governance to submit ETH for withholding, except for forcefully sending ETH by self-destructing a contract.
+
 ### [N-01] `ERC20PermitPermissionedMint.sol`: It is possible to implement `removeMinter()` without having to loop through the entire array
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L76-L92
