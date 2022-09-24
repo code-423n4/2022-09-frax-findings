@@ -39,11 +39,19 @@ Alternatively, one can also take an approach to remove minter by index, instead 
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84-L85
 
-### [N-03] Misleading function name
+### [N-03] Function names can be more informative
 
-`OperatorRegistry`'s `getNextValidator()` can be renamed to `getLastValidatorAndPop()` (the current function name does not mention popping behavior, and `Next` is usually not interpreted to be `Last`)
+`OperatorRegistry.getNextValidator()` can be renamed to `getLastValidatorAndPop()` 
+- The current function name does not mention popping behavior.
+- "Next" is usually not interpreted to be "Last".
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L126
+
+`frxETHMinter.depositEther()` can be renamed to `deliverEtherToValidators()`, or `depositWithheldETHToValidators()`:
+- "Deposit Ether" doesn't make a very descriptive name.
+- The word "deposit" in a DeFi context is often used when the tx sender deposits funds into a contract, thus the current usage is rather unconventional.
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L120
 
 ### [N-04] `public` functions that are not called by the contract itself can be made `external`
 
