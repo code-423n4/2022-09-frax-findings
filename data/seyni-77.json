@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "seyni",
+  "address": "0x3a4feea360299d2aa162eb3714fa1220e3a2f50b",
+  "risk": "2",
+  "title": "IERC20.transfer does not support non-standard ERC20 tokens",
+  "issueId": 77,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/77"
+}
