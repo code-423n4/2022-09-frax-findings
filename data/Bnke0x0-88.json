@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Bnke0x0",
+  "address": "0x1b8eaf5900941cfcc8323529040a48e129a28905",
+  "risk": "2",
+  "title": "Some users may not be able to withdraw until rewardsCycleEnd the due to underflow in beforeWithdraw()",
+  "issueId": 88,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/88"
+}
