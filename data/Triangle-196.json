@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Triangle",
+  "address": "0x813bfBD9725D385cBE3e39AF0e01f076F7B654fb",
+  "risk": "3",
+  "title": "Unable to stake Ether in depositEther() function if user adds back the staked validator accidentally",
+  "issueId": 196,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/196"
+}
