@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "PaludoX0",
+  "address": "0x2a00bd5289ed7502db478d9124ae1bc651dd25e3",
+  "risk": "2",
+  "title": "Toggle can be actioned by owner and time_lock contract at the same time",
+  "issueId": 292,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/292"
+}
