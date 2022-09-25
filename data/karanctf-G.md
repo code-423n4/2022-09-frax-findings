@@ -15,10 +15,8 @@ ERC20/ERC20PermitPermissionedMint.sol:84:        for (uint i = 0; i < minters_ar
 ## [G-3] Cache .length in loops to save gas
 ```solidity
 ERC20/ERC20PermitPermissionedMint.sol:84:        for (uint i = 0; i < minters_array.length; i++){ 
-OperatorRegistry.sol:62:        uint arrayLength = validatorArray.length;
-OperatorRegistry.sol:100:            swapValidator(remove_idx, validators.length - 1);
+
 OperatorRegistry.sol:114:            for (uint256 i = 0; i < original_validators.length; ++i) {
-OperatorRegistry.sol:198:        return validators.length;
 ```
 
 ## [G-4] Donot use default values Explicit initialization with zero is not required for variable declaration of numTokens because `uints are 0` by default.removeing this will reduce contract size and save a bit of gas.
