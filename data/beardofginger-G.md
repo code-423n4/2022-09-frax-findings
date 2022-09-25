@@ -81,3 +81,36 @@ frxETHMinter.sol, Line 94:
 frxETHMinter.sol, Line 129:        
 	
 		for (uint256 i = 0; i < numDeposits; ++i) {
+
+
+# Unnecessary checks use gas
+Solidity 0.8+ implements over- and underflow checks on arithmetic operations by default. In DepositContract.sol there are three for-loops where the uint height is incremented. We can be confident that height will not overflow because DEPOSIT_CONTRACT_TREE_DEPTH is a constant. The default check can be removed by modifying the code as such:
+
+Gassy:
+
+		for (uint height = 0; height < DEPOSIT_CONTRACT_TREE_DEPTH - 1; height++) {
+
+		}
+
+Optimised:
+
+		for (uint height = 0; height < DEPOSIT_CONTRACT_TREE_DEPTH - 1; ) {
+			unchecked { ++height; }
+		}
+
+
+Occurrences:
+
+DepositContract.sol, Line 76:        
+
+		for (uint height = 0; height < DEPOSIT_CONTRACT_TREE_DEPTH - 1; height++)
+
+
+DepositContract.sol, Line 83:        
+
+		for (uint height = 0; height < DEPOSIT_CONTRACT_TREE_DEPTH; height++) {
+
+
+DepositContract.sol, Line 148:        
+		
+		for (uint height = 0; height < DEPOSIT_CONTRACT_TREE_DEPTH; height++) {
