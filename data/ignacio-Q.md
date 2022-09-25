@@ -1,4 +1,8 @@
- USE OF BLOCK.TIMESTAMP
+# 1 _SAFEMINT() SHOULD BE USED RATHER THAN _MINT() WHEREVER POSSIBLE
+_mint() is discouraged in favor of _safeMint() which ensures that the recipient is either an EOA or implements IERC721Receiver
+https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L60
+
+ # 2 USE OF BLOCK.TIMESTAMP
 block.timestamp is being used several times
 https://github.com/corddry/ERC4626/blob/643cd044fac34bcbf64e1c3790a5126fec0dbec1/src/xERC4626.sol
 https://github.com/code-423n4/2022-09-frax/blob/main/src/sfrxETH.sol
