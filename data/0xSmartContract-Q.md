@@ -245,3 +245,40 @@ The announcement of the Ethereum Foundation on the subject is remarkable:
 
 **Description:**
 The ETH 2.0 staking address may change in the future, so add a function that ensures that this address can be changed safely.
+
+##  Suggestions : 
+
+###  [S-01] Add 0 address checks to ```submitAndGive``` function
+With the ```submitAndGive``` function, frxETH can be minted to another address, so to avoid errors, add 0 address checks here
+
+```js
+  function submitAndGive(address recipient) external payable {
+        _submit(recipient);
+    }
+```
+
+###  [S-02] `depositEther` should not be called from outside the project
+
+By mistake users can call this function and they will lose gas
+
+```js
+function depositEther() external nonReentrant {
+        // Initial pause check
+        require(!depositEtherPaused, "Depositing ETH is paused");
+
+```
+
+###  [S-03] No need to set default values
+```
+frxETHMinter.sol:
+
+    uint256 public withholdRatio; 
+    uint256 public currentWithheldETH; 
+
+
+constructor( )  {
+        withholdRatio = 0; 
+        currentWithheldETH = 0;
+    }
+
+```
