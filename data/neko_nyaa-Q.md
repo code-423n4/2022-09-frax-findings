@@ -5,6 +5,21 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L104-L
 
 `frxETHMinter.receive()` is equivalent to `submit()`, thereby there is no way for (e.g.) governance to submit ETH for withholding, except for forcefully sending ETH by self-destructing a contract.
 
+### [L-02] It is still possible for an uncontrolled address to be owner
+
+The `Owned` contract is designed such that any new owner must accept ownership, most likely to prevent mistaken transfers. However, this is not the case for the constructor, as `owner` is set to a parameter address, as opposed to the deployer (`msg.sender`).
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/Utils/Owned.sol#L10-L14
+
+The `Owned.sol` file is out-of-scope, however both `OperatorRegistry` and `frxETHMinter` contracts uses the same method for setting the initial owner. Thus the deployed contract can be lost upon construction if the initial address is not appropriately set. 
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L40-L43
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L52-L65
+
+For this reason I consider this a low-severity finding, and am opting to bring `Owned.sol` into the scope for this specific case.
+
+**Recommended mitigation steps:** Consider using [boringcrypto's BoringOwnable.sol](https://github.com/boringcrypto/BoringSolidity/blob/master/contracts/BoringOwnable.sol), which enforces the initial owner to be the deployer. The contract has all functionalities needed, and it's also good practice to use prewritten tools that are known to be secure.
+
 ### [N-01] `ERC20PermitPermissionedMint.sol`: It is possible to implement `removeMinter()` without having to loop through the entire array
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L76-L92
