@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "pashov",
+  "address": "0x1797c3bcebf8c858a916fcbbd0359f65f5484915",
+  "risk": "2",
+  "title": "Non-ERC20 compliant tokens (USDT) will be stuck in `frxETHMinter.sol`",
+  "issueId": 278,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/278"
+}
