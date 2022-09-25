@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "0xSky",
+  "address": "0xafee0b183264e33eac6ed7ef56aebeb96a9db899",
+  "risk": "2",
+  "title": "recoverERC20 does not work for non-standard ERC20 tokens in frxETHMinter.sol",
+  "issueId": 287,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/287"
+}
