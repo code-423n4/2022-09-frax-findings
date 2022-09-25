@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Chom",
+  "address": "0xc4c459668fb29833d7dee997d7d347e2634c9cef",
+  "risk": "2",
+  "title": "recoverEther will cause currentWithheldETH to be wrong. Further deposits will lose a lot of ETH!",
+  "issueId": 296,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/296"
+}
