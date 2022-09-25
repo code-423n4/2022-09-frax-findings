@@ -84,3 +84,15 @@ Otherwise, make sure that development team are aware of the risks of using a dra
 [frxETHMinter.sol#L2](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/frxETHMinter.sol#L2)
 [sfrxETH.sol#L2](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/sfrxETH.sol#L2)
 [frxETH.sol#L2](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/frxETH.sol#L2)
+
+## Be consistent with imports, use named imports
+
+Use this pattern
+```solidity
+import {Contract} from "./contract.sol";
+```
+Files:
+- [sfrxETH.sol#L27](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/sfrxETH.sol#L27)
+- [ERC20PermitPermissionedMint.sol#L4-L8](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/ERC20/ERC20PermitPermissionedMint.sol#L4-L8)
+- [frxETHMinter.sol#L27-L28](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/frxETHMinter.sol#L27-L28)
+- [frxETHMinter.sol#L30](https://github.com/code-423n4/2022-09-frax/blob/55ea6b1ef3857a277e2f47d42029bc0f3d6f9173/src/frxETHMinter.sol#L30)
