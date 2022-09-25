@@ -36,3 +36,24 @@ Do not initialize withheld_amt = 0 ..Every variable assignment in Solidity costs
 uint256 withheld_amt; is cheaper than uint256 withheld_amt = 0;.
 
 repo: https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L94
+
+Issue 4.
+
+Use revert instead of using require statement as it will save you a more gas...
+By using Custom error rather than using require will save you a gas..
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L66
+https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L68
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L77-L78
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L79
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L126
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L167
+https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L182
+https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L137
+https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L182
+
+Use custom error where ever possible as it will save You a much more gas..
+
+refernce: https://0xmacro.com/blog/solidity-gas-optimizations-cheat-sheet/ ..7.Use custom errors to save deployment and runtime costs in case of revert
