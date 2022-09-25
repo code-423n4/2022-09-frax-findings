@@ -27,7 +27,7 @@ It is reasonable to not clear all the array and do redundant reads and writes fr
 
 
 ```solidity
-for (uint256 i = remove_idx; i + 1 < original_validators.length; ++i) {
+for (uint256 i = remove_idx; i + 1 < validators.length; ++i) {
     validators[i] = validators[i + 1];
 }
 validators.pop();
