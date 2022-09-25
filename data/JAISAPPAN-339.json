@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "JAISAPPAN",
+  "address": "0x6a344cd7f1cfc77b9239ff6ed46b5b3adc44f466",
+  "risk": "3",
+  "title": "The Frax ETH liquid staking protocol WRONGLY assumes that the users can  convert their sfrxETH for more frxETH over time",
+  "issueId": 339,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/339"
+}
