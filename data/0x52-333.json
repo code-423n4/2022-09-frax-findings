@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "Large deposits can dos frxETHMinter#depositEther due to unbounded loop",
+  "issueId": 333,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/333"
+}
