@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "eugenereznikdesign",
+  "address": "0xfe08358527f2b9121bb88ed99f8c1138363b7e21",
+  "risk": "2",
+  "title": "Lack of event emission after sensitive actions",
+  "issueId": 205,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/205"
+}
