@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "xERC4626.sol#beforeWithdraw will fail under certain conditions",
+  "issueId": 390,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/390"
+}
