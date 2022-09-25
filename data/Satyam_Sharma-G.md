@@ -56,4 +56,23 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L1
 
 Use custom error where ever possible as it will save You a much more gas..
 
-refernce: https://0xmacro.com/blog/solidity-gas-optimizations-cheat-sheet/ ..7.Use custom errors to save deployment and runtime costs in case of revert
+refernce: https://0xmacro.com/blog/solidity-gas-optimizations-cheat-sheet/ ..7.Use custom errors to save deployment and runtime costs in case of revert.
+
+ISSUE 5.
+Using the indexed keyword for value types such as uint, bool, and address saves gas costs, as seen in the example below. 
+However, this is only the case for value types, whereas indexing bytes and strings are more expensive than their unindexed version.
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L102-L103
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L205
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L206
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L207
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L208
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L209
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L210
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L211
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L212
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L208-L214
+
+reference:https://0xmacro.com/blog/solidity-gas-optimizations-cheat-sheet/    point 9.
