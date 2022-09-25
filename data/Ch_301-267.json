@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Ch_301",
+  "address": "0x8040fd7b86966bd49e1b721d2ed264180aa15814",
+  "risk": "2",
+  "title": "Malicious users can steal the rewards from the vault",
+  "issueId": 267,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/267"
+}
