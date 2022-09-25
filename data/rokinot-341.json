@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "rokinot",
+  "address": "0x798349e06c67272465123b91bd88c5d19b8c7878",
+  "risk": "2",
+  "title": "IERC20().transfer may revert for some tokens",
+  "issueId": 341,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/341"
+}
