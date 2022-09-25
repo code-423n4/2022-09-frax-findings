@@ -1,0 +1,1 @@
+1. add clearValidatorArray() before the require statement in setWithdrawalCredential() to ensure validators array is cleared. To save more gas, clearValidatorArray() can be made internal and included in setWithdrawalCredential() and then a separate external function that calls the internal clearValidatorArray() is added to the contract , to make things all tidy and proper. 
