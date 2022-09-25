@@ -34,3 +34,12 @@ In a require, when checking a uint, using `!= 0` instead of `> 0` saves 6 gas. T
 Instances include:
 [`src/frxETHMinter.sol:79`](https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L79)
 [`src/frxETHMinter.sol:126`](https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L126)
+___
+## Not initializing `unit` variable to default value of zero
+
+Instances include:
+[`src/ERC20/ERC20PermitPermissionedMint.sol:84`](https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84)
+[`src/frxETHMinter.sol:129`](https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L129)
+[`src/OperatorRegistry.sol:63`](https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L63)
+[`src/OperatorRegistry.sol:84`](https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L84)
+[`src/OperatorRegistry.sol:114`](https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L114)
