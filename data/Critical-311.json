@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Critical",
+  "address": "0x07e6509914f956becec902265a6cf36f15a98e29",
+  "risk": "2",
+  "title": "Withdraw may revert when the last user tries to withdraw all",
+  "issueId": 311,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/311"
+}
