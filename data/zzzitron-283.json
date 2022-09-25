@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "zzzitron",
+  "address": "0xe30880FedbDC6E8B0c7DdD175c50cBb2Fb55eE25",
+  "risk": "2",
+  "title": "`ERC20PermitPermissionedMint:constructor` and `OperatorRegistry:constructor` both don't check whether `_timelock_address` is a zero address.",
+  "issueId": 283,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/283"
+}
