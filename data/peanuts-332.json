@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "peanuts",
+  "address": "0x7c982e9563c6d6863eb62d65225530791cfdd341",
+  "risk": "G",
+  "title": "Gas Optimizations",
+  "issueId": 332,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/332"
+}
