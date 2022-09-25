@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "joestakey",
+  "address": "0xa9c2ce9dcc090af921fb0a1f874962f65a4b6d9b",
+  "risk": "2",
+  "title": "`recoverEther` not updating `currentWithheldETH` breaks calculation of withheld amount for further deposits",
+  "issueId": 346,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/346"
+}
