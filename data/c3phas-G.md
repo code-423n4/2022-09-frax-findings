@@ -1,8 +1,7 @@
 ## FINDINGS
-NB: *Some functions have been truncated where neccessary to just show affected parts of the code*
-The gas estimates are the exact results from running the tests included with an exception of internal functions(we estimate based on number of SLOADS saved)
-The optimizer is set to run with the default runs(200).
-Throught the report some places might be denoted with audit tags to show the actual place affected.
+NB: *Some functions have been truncated where necessary to just show affected parts of the code*
+
+Throughout the report some places might be denoted with audit tags to show the actual place affected.
 
 ### Cache storage values in memory to minimize SLOADs
 The code can be optimized by minimizing the number of SLOADs.
