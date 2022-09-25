@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "peritoflores",
+  "address": "0xcc9c3d6ed709d47255815ff5b5bb17a745b7ceed",
+  "risk": "2",
+  "title": "[M1] 32-bit timestamp usage will make contract unusable in 2106",
+  "issueId": 336,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/336"
+}
