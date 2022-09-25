@@ -18,13 +18,21 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L52-L6
 
 For this reason I consider this a low-severity finding, and am opting to bring `Owned.sol` into the scope for this specific case.
 
-**Recommended mitigation steps:** Consider using [boringcrypto's BoringOwnable.sol](https://github.com/boringcrypto/BoringSolidity/blob/master/contracts/BoringOwnable.sol), which enforces the initial owner to be the deployer. The contract has all functionalities needed, and it's also good practice to use prewritten tools that are known to be secure.
+**Recommended mitigation steps:** Use `msg.sender` as the initial owner, as opposed to a parameter.
 
-### [N-01] `ERC20PermitPermissionedMint.sol`: It is possible to implement `removeMinter()` without having to loop through the entire array
+Also consider using [boringcrypto's BoringOwnable.sol](https://github.com/boringcrypto/BoringSolidity/blob/master/contracts/BoringOwnable.sol), which enforces the initial owner to be the deployer. The contract has all functionalities needed, and it's also good practice to use prewritten tools that are known to be secure.
+
+### [L-03] `ERC20PermitPermissionedMint.sol`: It is possible to implement `removeMinter()` without having to loop through the entire array
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L76-L92
 
-We can use the `minters` mapping to store the ($1$-based) *index* of the minter, instead of simply a boolean flag. This will immediately tell us which position to set `minters_array` to $0$, and also has the virtue of saving gas, for not having to read the entire storage array, as well as using `uint256` is actually more gas-efficient than `bool`.
+Loop line: https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84
+
+In general, it is not good practice to loop through an entire storage array, as it would cause the tx to be gas-costly, or even reverting, although such a case would be quite extreme and not likely to happen.
+
+This is considered a low finding because it has a gas optimization, a QA element, as well as a possible (but unlikely) bug.
+
+**Recommended mitigation steps:** We can use the `minters` mapping to store the ($1$-based) *index* of the minter, instead of simply a boolean flag. This will immediately tell us which position to set `minters_array` to $0$, and also has the virtue of saving gas, for not having to read the entire storage array, as well as using `uint256` is actually more gas-efficient than `bool`.
 
 Such an implementation can be as follow:
 
@@ -57,11 +65,15 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermis
 
 Alternatively, one can also take an approach to remove minter by index, instead of by address (similar to how `OperatorRegistry.removeValidator()` works), so that the `minters` mapping can retain a boolean-like value structure (however that would require finding the minter's index off-chain first).
 
-### [N-02] Inconsistent spacing between brackets
+### [L-04] It is recommended to use `safeTransfer` instead of `transfer` for ERC20
+
+https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L200
+
+### [N-01] Inconsistent spacing between brackets
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L84-L85
 
-### [N-03] Function names can be more informative
+### [N-02] Function names can be more informative
 
 `OperatorRegistry.getNextValidator()` can be renamed to `getLastValidatorAndPop()` 
 - The current function name does not mention popping behavior.
@@ -75,7 +87,7 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/OperatorRegistry.sol#L1
 
 https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L120
 
-### [N-04] `public` functions that are not called by the contract itself can be made `external`
+### [N-03] `public` functions that are not called by the contract itself can be made `external`
 
 Applies to all `public` functions within `ERC20PermitPermissionedMint.sol`
 
@@ -84,7 +96,3 @@ https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermis
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L65
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L76
 https://github.com/code-423n4/2022-09-frax/blob/main/src/ERC20/ERC20PermitPermissionedMint.sol#L94
-
-### [N-05] It is recommended to use `safeTransfer` instead of `transfer` for ERC20
-
-https://github.com/code-423n4/2022-09-frax/blob/main/src/frxETHMinter.sol#L200
