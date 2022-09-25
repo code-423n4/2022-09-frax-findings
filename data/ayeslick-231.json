@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "ayeslick",
+  "address": "0x7ccdb6979cb9dfa867b842fae8243b3b3fda444d",
+  "risk": "2",
+  "title": "Admin can set to address to the ```frxETHMinter``` contract",
+  "issueId": 231,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/231"
+}
