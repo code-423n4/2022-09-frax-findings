@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "imare",
+  "address": "0x6584dbfb545cc95633bfe906dfce28b2d65581ee",
+  "risk": "2",
+  "title": "First xERC4626/sfrxETH deposit exploit can break share calculation",
+  "issueId": 247,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/247"
+}
