@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "cryptphi",
+  "address": "0x876133657f5356e376b7ae27d251444727ce9488",
+  "risk": "2",
+  "title": "Missing zero address check in frxETHMinter.constructor() could make activeValidators set to true without making deposits",
+  "issueId": 180,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/180"
+}
