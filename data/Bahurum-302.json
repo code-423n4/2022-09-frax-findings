@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "Bahurum",
+  "address": "0x95d027b6f515827e023f7610220eeb0ea3bf4b3c",
+  "risk": "2",
+  "title": "Duplicate or incorrect validators temporarily disable `depositEther`",
+  "issueId": 302,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/302"
+}
