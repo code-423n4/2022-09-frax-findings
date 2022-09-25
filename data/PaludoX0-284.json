@@ -1,0 +1,9 @@
+{
+  "contest": 165,
+  "handle": "PaludoX0",
+  "address": "0x2a00bd5289ed7502db478d9124ae1bc651dd25e3",
+  "risk": "2",
+  "title": "Minting function \"minter_mint\" can be called by several allowed minters, but only frxETHMinter contract should be allowed",
+  "issueId": 284,
+  "issueUrl": "https://github.com/code-423n4/2022-09-frax-findings/issues/284"
+}
