@@ -1,3 +1,11 @@
+---
+sponsor: "Frax Finance"
+slug: "2022-09-frax"
+date: "2022-11-29"
+title: "Frax Ether Liquid Staking contest"
+findings: "https://github.com/code-423n4/2022-09-frax-findings/issues"
+contest: 165
+---
 
 # Overview
 
